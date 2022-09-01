@@ -35,7 +35,12 @@ public class MathAPI {
     }
 
     @RequestMapping(value = "/max", method = RequestMethod.POST)
-    public double myMax(){
-        return 0;
+    public double myMax(@RequestParam("n1") double n1,
+                        @RequestParam("n2") double n2){
+        if (n1 > n2){
+            return n1;
+        } else {
+            return n2;
+        }
     }
 }
