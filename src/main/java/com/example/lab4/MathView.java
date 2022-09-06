@@ -32,6 +32,9 @@ public class MathView extends VerticalLayout {
 
         HorizontalLayout h1 = new HorizontalLayout();
         VerticalLayout v1 = new VerticalLayout();
+        txt1.setWidth("550px");
+        txt2.setWidth("550px");
+        ans.setWidth("550px");
 
         h1.add(btnPlus, btnMinus, btnMulti, btnDivide, btnMod, btnMax);
         v1.add(txt1, txt2, operator, h1, ans);
